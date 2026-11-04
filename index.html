@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christ Chosen Ambassadors Ministry</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fc;
+    color: #222;
+    line-height: 1.7;
+}
+
+:root {
+    --blue: #102b50;
+    --gold: #d6a83e;
+    --white: #ffffff;
+}
+
+header {
+    background: var(--blue);
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 570px;
+    background: linear-gradient(
+        rgba(7, 27, 53, 0.82),
+        rgba(7, 27, 53, 0.82)
+    ), url("https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1600") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--blue);
+    padding: 13px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 75px 8%;
+    scroll-margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: var(--blue);
+    font-size: 34px;
+}
+
+.section-title p {
+    color: #777;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.pastor {
+    background: #eaf0f8;
+    text-align: center;
+}
+
+.pastor-card {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.pastor-card h3 {
+    color: var(--blue);
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.pastor-symbol {
+    font-size: 65px;
+}
+
+.ministries {
+    background: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: #f4f6fa;
+    padding: 30px;
+    border-radius: 10px;
+    width: 270px;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+}
+
+.card h3 {
+    color: var(--blue);
+    margin-bottom: 12px;
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.events {
+    background: #eaf0f8;
+}
+
+.event-card {
+    background: white;
+    padding: 30px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact {
+    background: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-box {
+    background: #f4f6fa;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: var(--blue);
+    margin-bottom: 12px;
+}
+
+footer {
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CHRIST CHOSEN AMBASSADORS</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#pastor">Our Pastor</a>
+        <a href="#ministries">Ministries</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>WELCOME TO <span class="gold">CHRIST CHOSEN</span> AMBASSADORS MINISTRY</h1>
+
+        <p>A place of worship, faith, prayer and fellowship.</p>
+
+        <a href="#about" class="btn">DISCOVER OUR MINISTRY</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-title">
+        <h2>About Our Ministry</h2>
+        <p>Welcome to Christ Chosen Ambassadors Ministry</p>
+    </div>
+
+    <div class="about-content">
+        <p>
+            Christ Chosen Ambassadors Ministry is a place where people
+            come together to worship God, grow in faith, pray and
+            fellowship with one another.
+        </p>
+
+        <p>
+            We welcome you to join our church family as we seek to
+            know God and grow together in His presence.
+        </p>
+
+        <a href="#contact" class="btn">Visit Us</a>
+    </div>
+</section>
+
+<!-- PASTOR -->
+<section class="pastor" id="pastor">
+    <div class="section-title">
+        <h2>Meet Our Pastor</h2>
+        <p>Our ministry leadership</p>
+    </div>
+
+    <div class="pastor-card">
+        <div class="pastor-symbol">✝</div>
+
+        <h3>Pastor Ohakuzem Chukudi Ohakuzem</h3>
+
+        <p>
+            Lead Pastor, Christ Chosen Ambassadors Ministry.
+        </p>
+    </div>
+</section>
+
+<!-- MINISTRIES -->
+<section class="ministries" id="ministries">
+    <div class="section-title">
+        <h2>Our Ministries</h2>
+        <p>Growing together in faith and service</p>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card">
+            <div class="card-icon">🙏</div>
+            <h3>Prayer Ministry</h3>
+            <p>A place for prayer, intercession and spiritual growth.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🎵</div>
+            <h3>Worship Ministry</h3>
+            <p>Worshipping God through songs and praise.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📖</div>
+            <h3>Word Ministry</h3>
+            <p>Learning and growing through the Word of God.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Fellowship</h3>
+            <p>Building love, unity and friendship among believers.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events" id="events">
+    <div class="section-title">
+        <h2>Church Events & Programmes</h2>
+        <p>Join us in worship and fellowship</p>
+    </div>
+
+    <div class="event-card">
+        <h3>Worship With Us</h3>
+        <p>
+            Come and experience worship, prayer and fellowship
+            with the family of Christ Chosen Ambassadors Ministry.
+        </p>
+        <br>
+        <a href="#contact" class="btn">Get Directions</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We would love to welcome you</p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+            <h3>📍 Our Location</h3>
+            <p>14 Arara Road Street, off Arigbanga.</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>⛪ Church</h3>
+            <p>Christ Chosen Ambassadors Ministry</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>👤 Lead Pastor</h3>
+            <p>Pastor Ohakuzem Chukudi Ohakuzem</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p><span>CHRIST CHOSEN AMBASSADORS MINISTRY</span></p>
+    <p>Worship • Faith • Prayer • Fellowship</p>
+    <p>© 2026 Christ Chosen Ambassadors Ministry. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
